@@ -104,7 +104,31 @@ position:fixed;top:16px;right:74px;z-index:100000;
 width:48px;height:48px;border:none;border-radius:50%;
 font-size:22px;cursor:pointer;
 }
+.review-img{
+width:100%;
+border-radius:14px;
+border:1px solid rgba(255,255,255,.08);
+margin-bottom:14px;
+}
 
+.discord-btn{
+display:flex;
+align-items:center;
+gap:12px;
+padding:14px 20px;
+border-radius:12px;
+text-decoration:none;
+color:white;
+background:#5865F2;
+font-weight:600;
+transition:.3s;
+width:fit-content;
+}
+
+.discord-btn:hover{
+transform:translateY(-3px);
+filter:brightness(1.1);
+}
 </style>
 </head>
 <body>
@@ -196,9 +220,22 @@ Verified client vouch showing quality, precision, and trust.
 
 <section id="contact">
 <div class="label">Contact</div>
-<p>Discord: <b>ruoishim</b></p>
-</section>
+
+<div class="card" style="max-width:420px;">
+<h3 style="margin-bottom:16px;">Work With Me</h3>
+<p style="color:#aaa;line-height:1.8;margin-bottom:20px;">
+Need a custom Roblox system, backend framework, or gameplay mechanic?
+Reach out directly on Discord.
+</p>
+
+<a href="https://discord.com/users/1325495515638661190" target="_blank" class="discord-btn">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+<path d="M20.317 4.369A19.791 19.791 0 0 0 15.885 3c-.191.328-.403.775-.554 1.125a18.27 18.27 0 0 0-5.661 0A12.64 12.64 0 0 0 9.116 3a19.736 19.736 0 0 0-4.434 1.37C1.884 8.58.126 12.684.516 16.729a19.9 19.9 0 0 0 5.993 3.03c.483-.665.913-1.37 1.287-2.112-.705-.268-1.376-.6-2.007-.992.168-.123.332-.252.492-.385 3.872 1.824 8.07 1.824 11.896 0 .162.133.326.262.492.385-.631.393-1.304.724-2.01.992.375.742.806 1.447 1.29 2.112a19.878 19.878 0 0 0 5.995-3.03c.458-4.69-.783-8.757-4.527-12.36ZM8.02 14.121c-1.182 0-2.157-1.085-2.157-2.419 0-1.334.955-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.419 0 1.334-.956 2.419-2.157 2.419Zm7.975 0c-1.182 0-2.157-1.085-2.157-2.419 0-1.334.955-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.419 0 1.334-.947 2.419-2.157 2.419Z"/>
+</svg>
+Message Me on Discord
+</a>
 </div>
+</section>
 
 <script>
 const glow=document.getElementById('glow');
